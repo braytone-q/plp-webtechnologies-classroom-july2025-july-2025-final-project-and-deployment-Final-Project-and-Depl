@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dev — Portfolio</title>
+  <meta name="description" content="Dev — portfolio showcasing projects, skills and contact details." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/avatar.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">dev<span class="accent">.</span></a>
+        <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span id="dark-toggle-icon" aria-hidden="true">🌙</span>
+        </button>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <img src="images/avatar.jpeg" alt="Dev avatar" class="avatar reveal" loading="lazy" />
+          <h1 class="reveal">Hi — I'm Monkey D. Luffy, I design and build web stuff.</h1>
+          <p class="lead reveal delay-1">I make interfaces that are fast, usable, and human. I specialize in front-end and product-focused UX.</p>
+          <p class="reveal delay-2"><a class="btn" href="projects.html">See projects</a> <a class="btn ghost" href="contact.html">Get in touch</a></p>
+        </div>
+
+        <div class="hero-card reveal delay-2">
+          <div class="card">
+            <h3>Featured</h3>
+            <p>Project: Farm Manager API — frontend + UX for a small agritech startup.</p>
+            <p><strong>Stack:</strong> HTML/CSS/JS, Django API</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Selected projects</h2>
+      <div class="grid project-grid">
+        <article class="project-card reveal" data-id="p1">
+          <img alt="screenshot" src="images/project1.jpg" />
+          <h3>Farm Manager</h3>
+          <p>Inventory & finance dashboard for small farms.</p>
+          <a class="small-link" href="projects.html#farm-manager">View</a>
+        </article>
+
+        <article class="project-card reveal delay-1" data-id="p2">
+          <img alt="screenshot" src="images/project2.png" />
+          <h3>UI Kit</h3>
+          <p>Reusable components and patterns.</p>
+          <a class="small-link" href="projects.html#ui-kit">View</a>
+        </article>
+
+        <article class="project-card reveal delay-2" data-id="p3">
+          <img alt="screenshot" src="images/project3.png" />
+          <h3>Landing Page</h3>
+          <p>High-conversion responsive landing page.</p>
+          <a class="small-link" href="projects.html#landing">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills container">
+      <h2>Core skills</h2>
+      <ul class="skill-list reveal">
+        <li>HTML5 / Semantic markup</li>
+        <li>CSS3 (Flexbox, Grid, responsive)</li>
+        <li>Vanilla JavaScript (ES6+)</li>
+        <li>UX & usability testing</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Dev — Built with HTML/CSS/JS</div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

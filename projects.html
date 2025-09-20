@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Dev</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">dev<span class="accent">.</span></a>
+        <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span id="dark-toggle-icon" aria-hidden="true">🌙</span>
+        </button>
+      <button id="nav-toggle-3" class="nav-toggle" aria-expanded="false" aria-controls="main-nav-3" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav-3" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects-intro reveal">
+      <h1>Projects</h1>
+      <p>Filter and open items to view details.</p>
+
+      <div class="project-controls">
+        <label>
+          <input id="filter-all" name="filter" type="radio" checked />
+          All
+        </label>
+        <label>
+          <input id="filter-ux" name="filter" type="radio" />
+          UX
+        </label>
+        <label>
+          <input id="filter-fe" name="filter" type="radio" />
+          Front-end
+        </label>
+      </div>
+    </section>
+
+    <section class="project-list grid reveal delay-1" id="project-list">
+      <!-- Example cards -->
+      <article class="project-card" data-type="fe" id="farm-manager">
+        <img alt="Farm manager app screenshot" src="images/project1.jpg" />
+        <h3>Farm Manager</h3>
+        <p>Dashboard for inventory, assets, and finance tracking.</p>
+        <div class="card-actions">
+          <button class="open-lightbox" data-img="images/project1.jpg" aria-label="Open Farm Manager image">Preview</button>
+          <a class="small-link" href="contact.html">Discuss</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-type="ux" id="ui-kit">
+        <img alt="UI kit screenshot" src="images/project2.png" />
+        <h3>Design System / UI Kit</h3>
+        <p>Component library & tokens for consistent UI.</p>
+        <div class="card-actions">
+          <button class="open-lightbox" data-img="images/project2.png">Preview</button>
+          <a class="small-link" href="contact.html">Discuss</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-type="fe" id="landing">
+        <img alt="Landing page screenshot" src="images/project3.png" />
+        <h3>Landing Page</h3>
+        <p>High-conversion product landing page template.</p>
+        <div class="card-actions">
+          <button class="open-lightbox" data-img="images/project3.png">Preview</button>
+          <a class="small-link" href="contact.html">Discuss</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">×</button>
+      <img id="lightbox-img" alt="preview" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year-3"></span> Dev</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

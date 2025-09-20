@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Dev</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Site Header: Logo, Navigation, Dark Mode Toggle -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">dev<span class="accent">.</span></a>
+        <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span id="dark-toggle-icon" aria-hidden="true">🌙</span>
+        </button>
+      <button id="nav-toggle-4" class="nav-toggle" aria-expanded="false" aria-controls="main-nav-4" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav-4" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+  <!-- Contact Section -->
+  <section class="contact-section reveal">
+      <h1>Contact</h1>
+      <p>If you're a recruiter or a client, leave a concise message.</p>
+
+  <!-- Contact Form -->
+  <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" required minlength="2" />
+          <span class="error" id="error-name"></span>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+          <span class="error" id="error-email"></span>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="message" rows="6" required minlength="10"></textarea>
+          <span class="error" id="error-message"></span>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn">Send</button>
+        </div>
+
+        <div id="form-success" class="form-success" aria-live="polite" hidden>Thanks — message recorded locally (demo).</div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year-4"></span> Dev</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
